@@ -1,0 +1,101 @@
+@import '../../../styles/variables.module';
+
+.agent_loves{
+    padding: 50px 0;
+
+    .agent_love_inner{
+        background: url(../../../public/images/agent-loves-bg.jpg) repeat-x;
+        padding: 50px 0 0px 0;
+        position: relative;
+
+        @media (max-width: 599px) {
+            padding: 0;
+        }
+
+        .agent_cont{ position: relative;}
+
+        h2{
+            text-align: left;
+            padding: 80px 0 0 0;
+        }
+
+        @media (max-width: 899px) {
+            padding: 20px 0 0px 0;
+            background-position: 0 -60px;
+
+            h2{
+                padding: 0px 0 0 0;
+                text-align: center;
+            }
+        }
+
+        .slide_container{
+            width: 100%;
+
+            .item{
+                margin: 15px 15px 20px 15px;
+                background: #fff;
+                border-radius: 10px;
+                box-shadow: 0px 5px 5px rgba(121, 121, 121, 0.15);
+
+                img{ width: 100%; height: 200px;}
+
+                p{
+                    display: block;
+                    padding: 10px 10px;
+                    height: 60px;
+                    line-height: 20px;
+                    overflow: hidden;
+                    font-size: 0.87em;
+                    box-sizing: border-box;
+
+
+                }
+
+                &:hover{
+                transform: scale(1.1); cursor: pointer; background: $custom-color; color: $white-color; border-radius: 10px;
+                }
+                @media (max-width: 599px) {
+                    width: auto;
+                    margin-left: 10px;
+                    p{
+                        padding: 5px;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            .b_refs_buttons{
+                display: inline-block;
+                position: absolute;
+                left: 50px;
+                bottom: 0px;
+                button{
+                    background: $white-color;
+                    padding: 10px 10px 8px 10px;
+                    box-sizing: border-box;
+                    margin: 0 10px 0 0;
+                    border-radius: 50% !important;
+                    box-shadow: 0px 16px 40px rgba(109, 141, 173, 0.4);
+                    border:none; cursor: pointer;
+
+                    svg{ font-size: 16px;}
+                }
+                @media (max-width: 899px) {
+                    display: block;
+                    position: relative;
+                    text-align: center;
+                    left: auto;
+                    bottom: auto;
+                }
+            }
+
+            &.active {
+                transform: scale(1.1); cursor: pointer; background: $custom-color; color: $white-color;
+                }
+
+        }
+
+    }
+
+}

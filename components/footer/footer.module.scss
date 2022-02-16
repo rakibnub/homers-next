@@ -1,0 +1,51 @@
+@import "../../styles/variables.module";
+
+.mainFooterContainer {
+  background-color: $footer-color;
+
+  .footer_top{
+    width: 100%;
+    border-bottom: 1px solid #AAA;
+    padding: 50px 0 30px 0;
+    color: $white-color;
+
+    p{ padding-top: 20px; padding-bottom: 30px;}
+
+    .socialLinks {
+      a {
+        margin-right: 10px;
+        border-radius: 50%;
+        padding: 4px 8px 1px 8px;
+        font-size: 30px;
+        color: $white-color;
+      }
+
+    }
+
+    .footer_link{
+      h4{ font-size: 1.3em; color:$white-color; line-height: 1.5; margin-bottom: 15px;}
+      ul{ list-style: none; padding: 0; margin: 0;
+        li{ display: block; margin: 0 0 5px 0;
+          a{ color: $white-color; line-height: 1.5; font-size: 1em;}
+        }
+      }
+      p{ padding: 0 !important;}
+    }
+  }
+
+  .footer_bottom{
+    width: 100%;
+    padding: 30px 0 30px 0;
+    color: $white-color;
+    a{ color: $white-color; line-height: 1.5; font-size: 1em; float: right; display: inline-block;
+      @media (max-width: 599px) {
+        float: left;
+      }
+    }
+  }
+
+
+
+
+
+}

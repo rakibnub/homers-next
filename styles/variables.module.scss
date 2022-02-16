@@ -1,0 +1,33 @@
+$primary-color: #173CFF;
+$primary-hover-color: #0027F5;
+$primary-accent-color: #F5F7FF;
+
+$secondary-color: #FF9900;
+$secondary-hover-color: #DF8600;
+$secondary-accent-color: #FFF9EF;
+
+$white-color: #FFF;
+$black-color: #000;
+$footer-color: #14182d;
+$default-border-radius: 8px;
+
+$process-color:#F7FBFF;
+$custom-color: #2689F5;
+
+:export {
+  primaryColor: $primary-color;
+  primaryHoverColor: $primary-hover-color;
+  primaryAccentColor: $primary-accent-color;
+
+  secondaryColor: $secondary-color;
+  secondaryHoverColor: $secondary-hover-color;
+  secondaryAccentColor: $secondary-accent-color;
+
+  whiteColor: $white-color;
+  blackColor: $black-color;
+  footerColor: $footer-color;
+  defaultBorderRadius: $default-border-radius;
+
+  processColor:$process-color;
+  customColor:$custom-color;
+}

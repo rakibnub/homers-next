@@ -1,0 +1,38 @@
+@import '../../../styles/variables.module';
+
+.process {
+    padding: 60px 0 60px 0;
+    background: $process-color;
+
+    h2 {
+      margin-bottom: 50px;
+    }
+    .process_box {
+      background: $white-color;
+      padding: 30px;
+      position: relative;
+      border-radius: 10px;
+      box-shadow: 0px 16px 40px rgba(129, 129, 129, 0.15);
+      span{
+        background: $custom-color;
+        padding: 10px;
+        border-radius: 5px;
+        color: $white-color;
+        display: inline-block;
+        position: absolute;
+        left: 30px;
+        top: -20px;
+      }
+      h4 {
+        font-size: 1.2em;
+        color: $black-color;
+        line-height: 1.4;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 899px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
